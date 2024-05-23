@@ -8,7 +8,6 @@ import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.monster.AbstractIllager;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.EnumSet;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -23,7 +22,6 @@ public class UseFoodForIllagerGoal<T extends WildChef> extends Goal {
 
     public UseFoodForIllagerGoal(T p_25972_) {
         this.mob = p_25972_;
-        this.setFlags(EnumSet.of(Flag.MOVE, Flag.LOOK));
     }
 
     public boolean canUse() {
