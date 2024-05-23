@@ -1,3 +1,5 @@
 {
-  "entity.wild_delight.wild_chef": "Wild Chef"
+  "item.wild_delight.wild_chef_spawn_egg": "Wild Chef Spawn Egg",
+  "entity.wild_delight.wild_chef": "Wild Chef",
+  "itemGroup.wild_delight": "Wild Delight"
 }

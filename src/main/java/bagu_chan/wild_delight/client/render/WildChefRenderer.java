@@ -1,5 +1,6 @@
 package bagu_chan.wild_delight.client.render;
 
+import bagu_chan.wild_delight.WildDelight;
 import bagu_chan.wild_delight.client.ModModelLayers;
 import bagu_chan.wild_delight.client.model.WildChefModel;
 import bagu_chan.wild_delight.entity.WildChef;
@@ -12,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.monster.Pillager;
 
 public class WildChefRenderer<T extends WildChef> extends IllagerRenderer<T> {
-    private static final ResourceLocation PILLAGER = new ResourceLocation("textures/entity/illager/pillager.png");
+    private static final ResourceLocation PILLAGER = new ResourceLocation(WildDelight.MODID, "textures/entity/illager/wild_chef.png");
 
     public WildChefRenderer(EntityRendererProvider.Context p_174354_) {
         super(p_174354_, new WildChefModel<>(p_174354_.bakeLayer(ModModelLayers.WILD_CHEF)), 0.5F);

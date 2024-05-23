@@ -34,7 +34,6 @@ public class UseSkilletGoal<T extends Mob> extends Goal {
 
     public UseSkilletGoal(T p_25972_) {
         this.mob = p_25972_;
-        this.setFlags(EnumSet.of(Flag.MOVE, Flag.LOOK));
     }
 
     public boolean canUse() {
@@ -47,7 +46,7 @@ public class UseSkilletGoal<T extends Mob> extends Goal {
                     cooldown = 40 + this.mob.getRandom().nextInt(40);
                     return true;
                 } else {
-                    cooldown = 100 + this.mob.getRandom().nextInt(100);
+                    cooldown = 40 + this.mob.getRandom().nextInt(100);
                 }
             }
         }
@@ -92,6 +91,7 @@ public class UseSkilletGoal<T extends Mob> extends Goal {
     }
 
     public void stop() {
+        this.mob.playSound(ModSounds.BLOCK_SKILLET_ADD_FOOD.get(), 1F, 1F);
         this.mob.setItemSlot(EquipmentSlot.MAINHAND, this.finishUsingItem(this.mob.getItemBySlot(EquipmentSlot.MAINHAND), this.mob.level(),  this.mob));
     }
 

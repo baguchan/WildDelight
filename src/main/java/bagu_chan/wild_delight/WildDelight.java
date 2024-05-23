@@ -1,5 +1,6 @@
 package bagu_chan.wild_delight;
 
+import bagu_chan.wild_delight.registry.ModCreativeTabs;
 import bagu_chan.wild_delight.registry.ModEntityTypes;
 import bagu_chan.wild_delight.registry.ModItems;
 import net.minecraft.world.entity.raid.Raid;
@@ -26,6 +27,7 @@ public class WildDelight
     public WildDelight()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModItems.ITEM_REGISTRY.register(modEventBus);
         ModEntityTypes.ENTITIES.register(modEventBus);
         // Register the commonSetup method for modloading

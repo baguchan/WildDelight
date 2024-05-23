@@ -3,6 +3,7 @@ package bagu_chan.wild_delight.entity.goal;
 import bagu_chan.wild_delight.entity.WildChef;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.SimpleContainer;
@@ -47,9 +48,10 @@ public class UseFoodForIllagerGoal<T extends Mob> extends Goal {
 
                 if (!list.isEmpty()) {
                     cooldown = 40 + this.mob.getRandom().nextInt(40);
+                    target = list.get(this.mob.getRandom().nextInt(list.size()));
                     return true;
                 } else {
-                    cooldown = 100 + this.mob.getRandom().nextInt(100);
+                    cooldown = 50 + this.mob.getRandom().nextInt(100);
                 }
             }
         }
@@ -70,11 +72,12 @@ public class UseFoodForIllagerGoal<T extends Mob> extends Goal {
     public void tick() {
         super.tick();
 
-        if(target != null&& target.isAlive()) {
-            this.mob.getNavigation().moveTo(target, 1.2F);
+        if(target != null&& target.isAlive() && this.mob.distanceToSqr(target) < 8) {
+            this.mob.getNavigation().moveTo(target, 1.1F);
             if (this.mob.getOffhandItem().getFoodProperties(this.target) != null) {
                 target.heal(this.mob.getOffhandItem().getFoodProperties(this.target).getNutrition());
                 this.eatTime = 1000;
+                this.mob.playSound(SoundEvents.GENERIC_EAT, 1F, 1F);
             }
         }
     }
