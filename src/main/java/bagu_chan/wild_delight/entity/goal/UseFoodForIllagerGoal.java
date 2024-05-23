@@ -51,7 +51,7 @@ public class UseFoodForIllagerGoal<T extends WildChef> extends Goal {
     }
 
     public boolean canContinueToUse() {
-        return this.target != null && this.mob.getOffhandItem().getFoodProperties(this.mob) != null && this.eatTime < 600;
+        return this.target != null && this.eatTime < 400;
     }
 
     public void start() {
