@@ -63,7 +63,7 @@ public class UseFoodForIllagerGoal<T extends WildChef> extends Goal {
     public void tick() {
         super.tick();
 
-        if(target != null&& target.isAlive() && this.mob.distanceToSqr(target) < 8) {
+        if (target != null && target.isAlive() && this.mob.distanceToSqr(target) < 8 * 8) {
             this.mob.getNavigation().moveTo(target, 1.1F);
             ItemStack stack = findFood().split(1);
             if (stack.getFoodProperties(this.target) != null) {
