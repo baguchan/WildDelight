@@ -1,5 +1,6 @@
 package bagu_chan.wild_delight.block;
 
+import bagu_chan.wild_delight.WildConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
@@ -64,12 +65,14 @@ public class RichSoilFarmlandRevampedBlock extends RichSoilFarmlandBlock {
     }
 
     private void decrease(ServerLevel level, BlockState state, BlockPos pos) {
-        int fertilize = state.getValue(FERTILIZE);
-        if (fertilize > 1) {
-            level.setBlockAndUpdate(pos, state.setValue(FERTILIZE, fertilize - 1));
-        } else {
-            int moisture = state.getValue(MOISTURE);
-            level.setBlockAndUpdate(pos, Blocks.FARMLAND.defaultBlockState().setValue(MOISTURE, moisture));
+        if (WildConfig.COMMON.richSoilTurnToFarmland.get()) {
+            int fertilize = state.getValue(FERTILIZE);
+            if (fertilize > 1) {
+                level.setBlockAndUpdate(pos, state.setValue(FERTILIZE, fertilize - 1));
+            } else {
+                int moisture = state.getValue(MOISTURE);
+                level.setBlockAndUpdate(pos, Blocks.FARMLAND.defaultBlockState().setValue(MOISTURE, moisture));
+            }
         }
     }
 
