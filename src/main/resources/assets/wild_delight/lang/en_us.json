@@ -1,8 +1,11 @@
 {
   "block.wild_delight.hay_carpet": "Hay Carpet",
+  "wild_delight.hay_carpet.jei_plugin": "If This Carpet under the animal. You can get Fertilizer Base",
   "block.wild_delight.dirty_hay_carpet": "Dirty Hay Carpet",
   "item.wild_delight.fertilizer_base": "Fertilizer Base",
   "item.wild_delight.fertilizer": "Fertilizer",
+  "wild_delight.fertilizer.jei_plugin": "Fertilizer can use like Vanilla Bonemeal and turn farmland to Rich Soil",
+  "bonemeal.fertilizer.jei_plugin": "In the Wild Delight. You cannot use bone meal for grow plant. use instead Fertilizer",
   "item.wild_delight.wild_chef_spawn_egg": "Wild Chef Spawn Egg",
   "entity.wild_delight.wild_chef": "Wild Chef",
   "wild_delight.config.rich_soil_turn_to_farmland": "Rich Soil Turn To FarmLand",
