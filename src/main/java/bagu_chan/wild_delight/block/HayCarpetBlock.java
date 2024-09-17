@@ -18,7 +18,7 @@ public class HayCarpetBlock extends CarpetBlock {
     public void entityInside(BlockState p_60495_, Level p_60496_, BlockPos p_60497_, Entity p_60498_) {
         super.entityInside(p_60495_, p_60496_, p_60497_, p_60498_);
         if (p_60498_ instanceof Animal animal) {
-            if (animal.getRandom().nextInt(400) == 0) {
+            if (animal.getRandom().nextInt(1000) == 0 && animal.getTarget() == null) {
                 animal.playSound(SoundEvents.CHICKEN_EGG, 1.0F, 1.25F);
                 p_60496_.setBlock(p_60497_, ModBlocks.DIRTY_HAY_CARPET.get().defaultBlockState(), 3);
             }

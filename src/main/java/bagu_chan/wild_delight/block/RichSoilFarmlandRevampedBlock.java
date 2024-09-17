@@ -25,7 +25,7 @@ import vectorwing.farmersdelight.common.utility.MathUtils;
 import java.util.Iterator;
 
 public class RichSoilFarmlandRevampedBlock extends RichSoilFarmlandBlock {
-    public static final IntegerProperty FERTILIZE = IntegerProperty.create("fertilize", 1, 4);
+    public static final IntegerProperty FERTILIZE = IntegerProperty.create("fertilize", 1, 8);
 
     public RichSoilFarmlandRevampedBlock(BlockBehaviour.Properties properties) {
         super(properties);
@@ -65,10 +65,11 @@ public class RichSoilFarmlandRevampedBlock extends RichSoilFarmlandBlock {
 
     private void decrease(ServerLevel level, BlockState state, BlockPos pos) {
         int fertilize = state.getValue(FERTILIZE);
-        if (fertilize <= 1) {
-            level.setBlockAndUpdate(pos, state.setValue(FERTILIZE, fertilize));
+        if (fertilize > 1) {
+            level.setBlockAndUpdate(pos, state.setValue(FERTILIZE, fertilize - 1));
         } else {
-            level.setBlockAndUpdate(pos, Blocks.FARMLAND.defaultBlockState());
+            int moisture = state.getValue(MOISTURE);
+            level.setBlockAndUpdate(pos, Blocks.FARMLAND.defaultBlockState().setValue(MOISTURE, moisture));
         }
     }
 
