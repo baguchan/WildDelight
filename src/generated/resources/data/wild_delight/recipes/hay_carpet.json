@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "WW"
+  ],
+  "result": {
+    "item": "wild_delight:hay_carpet"
+  },
+  "show_notification": true
+}

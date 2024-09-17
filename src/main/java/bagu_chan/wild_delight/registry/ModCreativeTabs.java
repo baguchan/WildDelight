@@ -20,6 +20,14 @@ public class ModCreativeTabs {
                 .icon(() -> ModItems.WILD_CHEF_SPAWNEGG.get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
                     output.acceptAll(Stream.of(
+                            ModBlocks.HAY_CARPET,
+                            ModBlocks.DIRTY_HAY_CARPET
+                    ).map(sup -> {
+                        return sup.get().asItem().getDefaultInstance();
+                    }).toList());
+                    output.acceptAll(Stream.of(
+                            ModItems.FERTILIZER_BASE,
+                            ModItems.FERTILIZER,
                             ModItems.WILD_CHEF_SPAWNEGG
                     ).map(sup -> {
                         return sup.get().getDefaultInstance();

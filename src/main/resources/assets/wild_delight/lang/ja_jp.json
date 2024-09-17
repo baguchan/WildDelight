@@ -1,0 +1,9 @@
+{
+  "block.wild_delight.hay_carpet": "俵のカーペット",
+  "block.wild_delight.dirty_hay_carpet": "汚れた俵のカーペット",
+  "item.wild_delight.fertilizer_base": "肥料の元",
+  "item.wild_delight.fertilizer": "肥料",
+  "item.wild_delight.wild_chef_spawn_egg": "ワイルドシェフのスポーンエッグ",
+  "entity.wild_delight.wild_chef": "ワイルドシェフ",
+  "itemGroup.wild_delight": "Wild Delight"
+}

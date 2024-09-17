@@ -1,4 +1,8 @@
 {
+  "block.wild_delight.hay_carpet": "Hay Carpet",
+  "block.wild_delight.dirty_hay_carpet": "Dirty Hay Carpet",
+  "item.wild_delight.fertilizer_base": "Fertilizer Base",
+  "item.wild_delight.fertilizer": "Fertilizer",
   "item.wild_delight.wild_chef_spawn_egg": "Wild Chef Spawn Egg",
   "entity.wild_delight.wild_chef": "Wild Chef",
   "itemGroup.wild_delight": "Wild Delight"
