@@ -13,7 +13,7 @@ public class WildEvent {
     @SubscribeEvent
     public static void bonemealEvent(BonemealEvent event) {
         if (event.getBlock().is(Blocks.FARMLAND)) {
-            event.getLevel().setBlock(event.getPos(), ModBlocks.RICH_SOIL.get().defaultBlockState().setValue(RichSoilFarmlandRevampedBlock.FERTILIZE, 1), 3);
+            event.getLevel().setBlock(event.getPos(), ModBlocks.RICH_SOIL.get().defaultBlockState(), 3);
             event.setResult(Event.Result.ALLOW);
         }
 

@@ -5,5 +5,6 @@
   "item.wild_delight.fertilizer": "Fertilizer",
   "item.wild_delight.wild_chef_spawn_egg": "Wild Chef Spawn Egg",
   "entity.wild_delight.wild_chef": "Wild Chef",
+  "wild_delight.config.rich_soil_turn_to_farmland": "Rich Soil Turn To FarmLand",
   "itemGroup.wild_delight": "Wild Delight"
 }
