@@ -17,7 +17,7 @@ public class WildEvent {
             event.setResult(Event.Result.ALLOW);
         }
 
-        if (event.getBlock().is(ModBlocks.RICH_SOIL_FARMLAND.get())) {
+        if (event.getBlock().is(ModBlocks.RICH_SOIL_FARMLAND.get()) && WildConfig.COMMON.richSoilTurnToFarmland.get()) {
             int fertilize = event.getBlock().getValue(RichSoilFarmlandRevampedBlock.FERTILIZE);
             if (fertilize < 8) {
                 event.getLevel().setBlock(event.getPos(), event.getBlock().setValue(RichSoilFarmlandRevampedBlock.FERTILIZE, fertilize + 1), 3);
