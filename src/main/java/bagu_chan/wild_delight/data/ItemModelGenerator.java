@@ -28,6 +28,7 @@ public class ItemModelGenerator extends ItemModelProvider {
         this.toBlock(ModBlocks.DIRTY_HAY_CARPET);
         this.toBlock(ModBlocks.HAY_CARPET);
         egg(ModItems.WILD_CHEF_SPAWNEGG);
+        egg(ModItems.BUTTERFLY_SPAWNEGG);
     }
 
     public ItemModelBuilder basicItem(Supplier<Item> item) {

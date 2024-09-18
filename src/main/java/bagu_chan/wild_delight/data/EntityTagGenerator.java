@@ -19,5 +19,6 @@ public class EntityTagGenerator extends EntityTypeTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider p_255894_) {
         this.tag(EntityTypeTags.RAIDERS).add(ModEntityTypes.WILD_CHEF.get());
+        this.tag(EntityTypeTags.FALL_DAMAGE_IMMUNE).add(ModEntityTypes.BUTTERFLY.get());
     }
 }

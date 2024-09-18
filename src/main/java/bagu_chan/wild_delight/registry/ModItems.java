@@ -20,4 +20,5 @@ public class ModItems {
     public static final RegistryObject<Item> FERTILIZER = ITEMS.register("fertilizer", () -> new BoneMealItem((new Item.Properties())));
 
     public static final RegistryObject<Item> WILD_CHEF_SPAWNEGG = ITEMS.register("wild_chef_spawn_egg", () -> new ForgeSpawnEggItem(ModEntityTypes.WILD_CHEF, 9804699, 0x81052d, (new Item.Properties())));
+    public static final RegistryObject<Item> BUTTERFLY_SPAWNEGG = ITEMS.register("butterfly_spawn_egg", () -> new ForgeSpawnEggItem(ModEntityTypes.BUTTERFLY, 0xDEE47F, 0x9FA542, (new Item.Properties())));
 }

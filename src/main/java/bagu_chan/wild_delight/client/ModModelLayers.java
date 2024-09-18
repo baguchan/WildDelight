@@ -6,4 +6,5 @@ import net.minecraft.resources.ResourceLocation;
 
 public class ModModelLayers {
     public static final ModelLayerLocation WILD_CHEF = new ModelLayerLocation(new ResourceLocation(WildDelight.MODID, "wild_chef"), "main");
+    public static final ModelLayerLocation BUTTER_FLY = new ModelLayerLocation(new ResourceLocation(WildDelight.MODID, "butter_fly"), "main");
 }

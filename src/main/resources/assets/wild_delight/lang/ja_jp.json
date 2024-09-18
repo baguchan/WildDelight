@@ -7,7 +7,9 @@
   "wild_delight.fertilizer.jei_desc": "肥料はバニラ骨粉のように使用でき、農地を肥沃な土に変えることができます。",
   "wild_delight.bone_meal.jei_desc": "Wild Delightでは骨粉を成長に使うことができません。 代わりに肥料を使ってください",
   "item.wild_delight.wild_chef_spawn_egg": "ワイルドシェフのスポーンエッグ",
+  "item.wild_delight.butterfly_spawn_egg": "バタフライのスポーンエッグ",
   "entity.wild_delight.wild_chef": "ワイルドシェフ",
+  "entity.wild_delight.butterfly": "バタフライ",
   "wild_delight.config.rich_soil_turn_to_farmland": "Rich Soil Turn To FarmLand",
   "itemGroup.wild_delight": "Wild Delight"
 }

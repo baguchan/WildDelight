@@ -28,7 +28,8 @@ public class ModCreativeTabs {
                     output.acceptAll(Stream.of(
                             ModItems.FERTILIZER_BASE,
                             ModItems.FERTILIZER,
-                            ModItems.WILD_CHEF_SPAWNEGG
+                            ModItems.WILD_CHEF_SPAWNEGG,
+                            ModItems.BUTTERFLY_SPAWNEGG
                     ).map(sup -> {
                         return sup.get().getDefaultInstance();
                     }).toList());
