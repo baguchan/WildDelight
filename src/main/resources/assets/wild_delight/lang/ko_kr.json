@@ -1,0 +1,13 @@
+{
+  "block.wild_delight.hay_carpet": "바위의 카펫",
+  "wild_delight.hay_carpet.jei_desc": "바위 카펫이 동물 밑에 있으면 비료 소스를 얻을 수 있습니다.",
+  "block.wild_delight.dirty_hay_carpet": "더러운 바위 카펫",
+  "item.wild_delight.fertilizer_base": "비료의 원래",
+  "item.wild_delight.fertilizer": "비료",
+  "wild_delight.fertilizer.jei_desc": "비료는 바닐라 골분처럼 사용할 수 있으며 농지를 비옥한 흙으로 바꿀 수 있습니다.",
+  "wild_delight.bone_meal.jei_desc": "Wild Delight골분을 성장에 사용할 수 없습니다. 대신 비료를 사용",
+  "item.wild_delight.wild_chef_spawn_egg": "야생 요리사의 스폰 달걀",
+  "entity.wild_delight.wild_chef": "야생 요리사",
+  "wild_delight.config.rich_soil_turn_to_farmland": "Rich Soil Turn To FarmLand",
+  "itemGroup.wild_delight": "Wild Delight"
+}
